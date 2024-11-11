@@ -65,7 +65,7 @@ const OnBoarding = () => {
         }
     
         try {
-            const response = await axios.put('http://localhost:8000/user', { formData });
+            const response = await axios.put('https://matemydog-production.up.railway.app/user', { formData });
             console.log(response);
             if (response.status === 200) {
                 navigate('/dashboard');

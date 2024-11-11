@@ -10,7 +10,7 @@ const ChatDisplay = ({ user, clickedUser }) => {
 
     const getUsersMessages = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/messages', {
+            const response = await axios.get('https://matemydog-production.up.railway.app/messages', {
                 params: { 
                     userId: user?.user_id, 
                     correspondingUserId: clickedUser?.user_id
@@ -24,7 +24,7 @@ const ChatDisplay = ({ user, clickedUser }) => {
 
     const getClickedUsersMessages = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/messages', {
+            const response = await axios.get('https://matemydog-production.up.railway.app/messages', {
                 params: { 
                     userId: clickedUser?.user_id, 
                     correspondingUserId: user?.user_id

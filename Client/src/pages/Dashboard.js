@@ -16,7 +16,7 @@ const Dashboard = () => {
 
   const getUser = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/user', {
+      const response = await axios.get('https://matemydog-production.up.railway.app/user', {
         params: { userId },
       });
       setUser(response.data);
@@ -30,7 +30,7 @@ const Dashboard = () => {
 
   const getNearbyUsers = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/getloc-users`, {
+      const response = await axios.get(`https://matemydog-production.up.railway.app/getloc-users`, {
         params: { userId },
       });
       setNearbyUsers(response.data);
@@ -57,7 +57,7 @@ const Dashboard = () => {
 
   const updateMatches = async (matchedUserId) => {
     try {
-      await axios.put('http://localhost:8000/addmatch', {
+      await axios.put('https://matemydog-production.up.railway.app/addmatch', {
         userId,
         matchedUserId
       });

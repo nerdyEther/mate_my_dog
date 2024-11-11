@@ -15,7 +15,7 @@ const ChatInput = ({ user, clickedUser, getUserMessages, getClickedUsersMessages
     };
 
     try {
-      await axios.post('http://localhost:8000/message', { message: messageData });
+      await axios.post('https://matemydog-production.up.railway.app/message', { message: messageData });
       getUserMessages();
       getClickedUsersMessages();
       setMessage("");

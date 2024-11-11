@@ -10,7 +10,7 @@ const MatchesDisplay = ({ matches, setClickedUser }) => {
             setLoading(true);
             try {
                 const matchedUserIds = matches.map(({ user_id }) => user_id);
-                const response = await axios.get("http://localhost:8000/users", {
+                const response = await axios.get("https://matemydog-production.up.railway.app/users", {
                     params: { userIds: JSON.stringify(matchedUserIds) }
                 });
                 
