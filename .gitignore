@@ -1,0 +1,4 @@
+node_modules/
+Client/node_modules/
+*.pack
+Client/node_modules/electron/

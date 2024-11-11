@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.49c6e228.css",
+    "main.js": "/static/js/main.ebd1940e.js",
+    "static/media/bg.jpg": "/static/media/bg.941d37afab6987fd3ed8.jpg",
+    "static/media/tinder_logo_white.png": "/static/media/tinder_logo_white.62b070ecd1a6baf9a19b.png",
+    "index.html": "/index.html",
+    "main.49c6e228.css.map": "/static/css/main.49c6e228.css.map",
+    "main.ebd1940e.js.map": "/static/js/main.ebd1940e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49c6e228.css",
+    "static/js/main.ebd1940e.js"
+  ]
+}
